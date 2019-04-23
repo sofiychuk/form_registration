@@ -1,0 +1,119 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
+    background: url(../img/main%20bg.png);
+    background-size: cover;
+}
+
+.form {
+    background-color: #fff;
+    width: 40%;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+.header__icon,
+.header__title {
+    float: left;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.header__icon {
+    width: 15%;
+    text-align: right;
+}
+
+.header__title {
+    font-size: 28px;
+    color: rgb(27, 28, 29);
+    font-weight: bold;
+    line-height: 0.833;
+    width: calc(85% - 10px);
+    margin-left: 10px;
+}
+
+.header__text {
+    font-size: 13px;
+    color: rgb(122, 123, 127);
+    line-height: 1.538;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header__link-Log_in--red {
+    color: #ea355a;
+    text-decoration: none;
+}
+
+.form-main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.field-wrap__input {
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(122, 123, 127);
+    line-height: 1.429;
+    text-align: left;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+}
+
+.field-wrap__input--medium {
+    width: 42.2%;
+    float: left;
+}
+
+.field-wrap-left input {
+    margin-right: 3%;
+}
+
+.field-wrap-right input {
+    margin-left: 3%;
+}
+
+.field-wrap__input--big {
+    width: calc(100% - 20px);
+}
+
+.field-wrap__btn--green {
+    width: 100%;
+    background-color: #ea355a;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.111;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 3px 0 #bd1962;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-footer {
+    width: 80%;
+    margin: 5px auto;
+    padding-bottom: 50px;
+    font-size: 12px;
+    color: rgb(122, 123, 127);
+    line-height: 1.667;
+    text-align: left;
+}
+.footer__link-terms--red, 
+.footer__link-privacy--red{
+    text-decoration: none;
+    color: #ea355a;
+}
