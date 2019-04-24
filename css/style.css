@@ -3,11 +3,13 @@
     margin: 0px;
 }
 
+html,
 body {
     font-family: "Arial", sans-serif;
     box-sizing: border-box;
     background: url(../img/main%20bg.png);
     background-size: cover;
+    min-height: 100%;
 }
 
 .form {
@@ -16,17 +18,17 @@ body {
     margin: auto;
     margin-top: 70px;
     border-radius: 5px;
+     transition: box-shadow 1s ease;
 }
 
 .header__icon,
 .header__title {
-    float: left;
-    height: 50px;
-    margin-top: 30px;
+    display: inline-block;
+    padding: 30px 0;
 }
 
 .header__icon {
-    width: 15%;
+    padding-left: 45px;
     text-align: right;
 }
 
@@ -35,8 +37,7 @@ body {
     color: rgb(27, 28, 29);
     font-weight: bold;
     line-height: 0.833;
-    width: calc(85% - 10px);
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .header__text {
@@ -44,51 +45,51 @@ body {
     color: rgb(122, 123, 127);
     line-height: 1.538;
     text-align: left;
-    width: 80%;
     margin: 0 auto;
-}
-
-.header__link-Log_in--red {
-    color: #ea355a;
-    text-decoration: none;
+    width: 80%;
 }
 
 .form-main {
     width: 80%;
     margin: 0 auto;
-    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.field-wrap {
+    margin: 15px 0;
 }
 
 .field-wrap__input {
-    padding: 10px;
+     padding: 10px 0 10px 10px;
     font-size: 14px;
     color: rgb(122, 123, 127);
     line-height: 1.429;
-    text-align: left;
-    margin: 10px 0;
     background-color: #f0f0f0;
     border: none;
     border-radius: 5px;
 }
 
-.field-wrap__input--medium {
-    width: 42.2%;
+.field-wrap-left {
     float: left;
+    width: 50%;
 }
 
-.field-wrap-left input {
-    margin-right: 3%;
+.field-wrap-right {
+    float: right;
+    width: 50%;
+    text-align: right;
 }
 
-.field-wrap-right input {
-    margin-left: 3%;
+.field-wrap__input--medium {
+    width: 90%;
 }
 
 .field-wrap__input--big {
-    width: calc(100% - 20px);
+    width: calc(100% - 10px);
+       clear: both;
 }
 
-.field-wrap__btn--green {
+.field-wrap__btn--red {
     width: 100%;
     background-color: #ea355a;
     font-size: 18px;
@@ -112,8 +113,26 @@ body {
     line-height: 1.667;
     text-align: left;
 }
-.footer__link-terms--red, 
-.footer__link-privacy--red{
+
+.header__link-Log_in--red,
+.footer__link-terms--red,
+.footer__link-privacy--red {
     text-decoration: none;
     color: #ea355a;
+}
+.form:hover{
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: box-shadow 0.7s;
+}
+.field-wrap__btn--red:hover{
+    transform: scale(1.01);
+    box-shadow: 0 3px 0 #bd1962, 0 10px 10px rgba(0,0,0,0.22)
+}
+.header__icon--rotate {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.form:hover .header__icon--rotate{
+    -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
